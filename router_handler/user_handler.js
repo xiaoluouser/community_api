@@ -55,7 +55,7 @@ exports.register = (req, res) => {
             return;
         }
         userInfo.password = bcrypt.hashSync(userInfo.password, 10);
-        //用户的初始化信息。
+        //用户的初始化信息
         let user = {
             password: userInfo.password,
             phone: userInfo.phone,
